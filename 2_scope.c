@@ -13,13 +13,13 @@
 #include<stdio.h>
 
 // changer le prototype de la fonction du 'a' et du 'b'
-void test(int a, int b)
+void test(int nb1, int nb2)
 {
-	printf("Valeur de a de la fonction TEST =	%i\n", a);
-	printf("Adresse de a du TEST            = 	%p\n\n", &a);
+	printf("Valeur de nb1 de la fonction TEST =	%i\n", nb1);
+	printf("Adresse de nb1 du TEST            = 	%p\n\n", &nb1);
 	
-	printf("Valeur de b de la fonction TEST =	%i\n", b);
-	printf("Adresse de b du TEST            =	%p\n\n", &b);
+	printf("Valeur de nb2 de la fonction TEST =	%i\n", nb2);
+	printf("Adresse de nb2 du TEST            =	%p\n\n", &nb2);
 }
 
 int main(void)

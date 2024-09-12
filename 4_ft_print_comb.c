@@ -12,6 +12,23 @@
 
 #include <unistd.h>
 
+void inner_function(int* a, int * b, int* c)
+{
+		*c = *b + 1;
+			while (*c <= '9')
+			{
+				write(1, a, 1);
+				write(1, b, 1);
+				write(1, c, 1);
+				if (*a != '7' || *b != '8' || *c != '9')
+					write(1, ", ", 2);
+				(*c)++;
+			}
+			(*b)++;
+}
+
+
+
 void	ft_print_comb(void)
 {
 	int	a;
@@ -24,17 +41,7 @@ void	ft_print_comb(void)
 		b = a + 1;
 		while (b <= '8')
 		{
-			c = b + 1;
-			while (c <= '9')
-			{
-				write(1, &a, 1);
-				write(1, &b, 1);
-				write(1, &c, 1);
-				if (a != '7' || b != '8' || c != '9')
-					write(1, ", ", 2);
-				c++;
-			}
-			b++;
+			inner_function(&a, &b, &c);
 		}
 		a++;
 	}
