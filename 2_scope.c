@@ -6,7 +6,7 @@
 /*   By: flverge <flverge@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:20:27 by flverge           #+#    #+#             */
-/*   Updated: 2024/09/12 09:31:51 by flverge          ###   ########.fr       */
+/*   Updated: 2024/09/12 10:12:38 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 // changer le prototype de la fonction du 'a' et du 'b'
 void test(int a, int b)
 {
-	printf("Valeur de a de la fonction TEST =  %i\n", a);
-	printf("Adresse de a du TEST =  %p\n\n", &a);
+	printf("Valeur de a de la fonction TEST =	%i\n", a);
+	printf("Adresse de a du TEST            = 	%p\n\n", &a);
 	
-	printf("Valeur de b de la fonction TEST =  %i\n", b);
-	printf("Adresse de b du TEST =  %p\n\n", &b);
+	printf("Valeur de b de la fonction TEST =	%i\n", b);
+	printf("Adresse de b du TEST            =	%p\n\n", &b);
 }
 
 int main(void)
@@ -30,14 +30,16 @@ int main(void)
 	a = 42;
 	b = 21;
 
-	printf("\nValeur de a de la fonction MAIN =  %i \n", a);
+	// Creer un pointeur sur a ET b.
+
+	printf("\nValeur de a de la fonction MAIN =	%i \n", a);
 	
-	printf("Adresse de a du MAIN =  %p \n\n", &a);
+	printf("Adresse de a du MAIN            =	%p \n\n", &a);
 	
 	
-	printf("Valeur de b de la fonction MAIN =  %i\n", b);
+	printf("Valeur de b de la fonction MAIN =	%i\n", b);
 	
-	printf("Adresse de b du MAIN =  %p \n\n", &b);
+	printf("Adresse de b du MAIN            =	%p \n\n", &b);
 
 	printf("================\n\n");
 	

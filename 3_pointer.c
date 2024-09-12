@@ -6,7 +6,7 @@
 /*   By: flverge <flverge@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:20:27 by flverge           #+#    #+#             */
-/*   Updated: 2024/09/12 09:32:45 by flverge          ###   ########.fr       */
+/*   Updated: 2024/09/12 10:08:29 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,30 +22,46 @@ int main(void)
 
 	// ! STEP 1 : declarer un pointeur sur 'a'
 
-	printf("\nValeur de a de la fonction MAIN =  %i  \n", a);
-	printf("Adresse de a du MAIN =  %p  \n\n", &a);
+	
+
+	printf("\nValeur de a  = 			%i  \n", a);
+	printf("Adresse de a =			%p  \n\n", &a); 
 
 	// ! STEP 2 : Afficher les pointeurs (adresse + dereference de pointeur)
-	// printf("Valeur de ptr_a =  %p  \n\n", ); // valeur du pointer de a
+	// printf("Valeur du pointeur ptr_a  =	%p  \n\n", ptr_a);
 	
-	// printf("Valeur vers laquelle POINTE ptr_a =  %i  \n\n", ); // valeur dereferencee du pointer de a
+	// printf("Adresse du pointeur ptr_a =	%p  \n\n", &ptr_a);
+	
+	// printf("Valeur vers laquelle pointe ptr_a (valeur de a) =  %i  \n\n", *ptr_a);
 	
 	printf("================\n\n");
 
 	
-	printf("Valeur de b de la fonction MAIN =  %i  \n", b);
-	printf("Adresse de b du MAIN =  %p \n\n", &b);
+	printf("Valeur de b  = 			 %i  \n", b);
+	printf("Adresse de b = 			 %p \n\n", &b);
 	
 	// ! STEP 3 : Declarer un pointeur sur b (adresse + dereference de pointeur)
-	// printf("Valeur de ptr_b =  %p  \n\n", ); // valeur du pointer de a
 	
-	// printf("Valeur vers laquelle POINTE ptr_b =  %i  \n\n", ); // valeur dereferencee du pointer de a
-
+	// printf("Valeur du pointeur ptr_b  =	 %p  \n\n", ptr_b);
 	
+	// printf("Adresse du pointeur ptr_b =	 %p  \n\n", &ptr_b);
+	
+	// printf("Valeur vers laquelle pointe ptr_b (valeur de b) =  %i  \n\n", *ptr_b);
+		
 	// ! STEP 4 : Changer la valeur du pointeur sur a + le print
 	
-	// printf("Valeur de ptr_a =  %p  \n\n", ); // valeur du pointer de a
-	// printf("Valeur vers laquelle POINTE ptr_a =  %i  \n\n", ); // valeur dereferencee du pointer de a
+	
+	// printf("================\n");
+	// printf("Reassignation du pointeur\n");
+	// printf("================\n\n");
+	
+	// printf("Adresse de a =						%p  \n\n", &a);
+	// printf("Adresse de b = 						%p \n\n", &b);
+	// printf("Nouvelle valeur du pointeur ptr_a (adresse de b) =	%p  \n\n", ptr_a);
+	
+	// printf("Adresse du pointeur ptr_a =				%p  \n\n", &ptr_a);
+	
+	// printf("NOUVELLE valeur vers laquelle pointe ptr_a (valeur de b) =  %i  \n\n", *ptr_a);
 	
 	
 }
